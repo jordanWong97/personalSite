@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #313535;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2{
+    margin-bottom: 15px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.title{
+    margin-bottom: 20px;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 100vh;
+}
+
+@media(max-width: 768px){
+    .header .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .projects .container{
+        display: block;
+        text-align: center;
+    }
+}
+
+/* navbar */
+
+.navbar{
+    position: fixed;
+    height: 60px;
+    color: #fff;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+}
+
+.navbar .logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar a:hover{
+    color: #F94DBA;
+}
+
+.navbar .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .container ul{
+    display: flex;
+}
+
+.navbar ul li{
+    margin-left: 20px;
+}
+
+/* end navbar */
+
+/* header */
+
+.header{
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img{
+    max-width: 400px;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* end header */
+
+/* about */
+
+.about .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.about .resume{
+    margin-top: 30px;
+}
+
+.about .resume a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border: solid 1px;
+}
+
+/* end about */
+
+/* projects */
+
+.projects .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.projects .boxes{
+    display: flex;
+}
+
+.box{
+    flex: 1;
+    background-color: #565254;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .6)
+}
+
+/* end projects */
+
+/* contact */
+
+.contact .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* end contact */
